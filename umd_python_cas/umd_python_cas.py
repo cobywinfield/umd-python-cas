@@ -35,7 +35,7 @@ class UMDCASClient(object):
             raise ValueError("ticket is None can't validate user")
         
         xmlDict = {}
-        casValidateUrl = 'https://shib.idm.umd.edu/shibboleth-idp/profile/cas/serviceValidate?service=' + urllib.parse.quote_plus(self.host_name + self.post_auth_redirect_route)  + '&ticket=' + str(ticket)
+        casValidateUrl = self.umd_cas_ticket_url + urllib.parse.quote_plus(self.host_name + self.post_auth_redirect_route)  + '&ticket=' + str(ticket)
         xmlDump = urlopen(casValidateUrl).read().strip().decode('utf8', 'ignore')
         xmlDict = parse(xmlDump)
         try:
