@@ -6,7 +6,7 @@ class UMDCASClient(object):
     '''
     A python UMD Central Authentication Services remote CAS instance.
 
-    >>> from umd_cas_client import UMDCASClient
+    >>> from umd_python_cas import UMDCASClient
     '''
 
     def __init__(self, host_name=None, post_auth_route=None) -> None:
@@ -28,7 +28,7 @@ class UMDCASClient(object):
 
     
     def validate_ticket(self, req):
-        #pass in request a flask/django request OR a ticket string
+
         ticket = getattr(req, 'args', getattr(req, 'GET', {'ticket': req})).get('ticket')
 
         if ticket is None:
