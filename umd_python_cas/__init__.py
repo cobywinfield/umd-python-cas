@@ -1,6 +1,6 @@
 """
-pip-test
-A test pip package.
+umd-python-cas
+A python client to access the University of Maryland Central Authentication Services (CAS) remote instance.
 """
 
 __version__ = "1.0.0"
