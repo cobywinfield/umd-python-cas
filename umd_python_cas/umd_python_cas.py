@@ -25,7 +25,6 @@ class UMDCASClient(object):
 
     def get_logout_cas_url(self):
         return self.umd_cas_logout_url
-
     
     def validate_ticket(self, req):
         ticket = getattr(req, 'args', getattr(req, 'GET', {'ticket': req})).get('ticket')
