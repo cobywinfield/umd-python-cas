@@ -1,6 +1,6 @@
 # umd-python-cas
 ## Getting Started
-To get started, follow the instructions on one of our demo repos, either [flask](https://github.com/umd-python-cas/flask-demo) or [django](https://github.com/umd-python-cas/django-demo). Those examples will help you get started with umd-python-cas in a web app environment. The rest of this readme has extra information.
+To get started, follow the instructions on one of our demo repos, either [Flask](https://github.com/umd-python-cas/flask-demo) or [Django](https://github.com/umd-python-cas/django-demo). Those examples will help you get started with umd-python-cas in a web app environment. The rest of this readme has extra information.
 ## Install
 ```bash
 pip install umd-python-cas
