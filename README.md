@@ -35,9 +35,9 @@ client = UMDCASClient(host_name="http://127.0.0.1:5000", post_auth_route="/secur
 ```
 The `hostname` tells the client what the base URL of your web sever is. For development, this is something like `127.0.0.1:5000` or `localhost:5000` as shown. For a production app, this could be something like `myapp.com`.
 
-The `post_auth_route` tells the client where to return to after the user logs in. This depends on how you set up your web server, see the flask and django demos at the beginning of this repo for examples.
+The `post_auth_route` tells the client where to return to after the user logs in. This depends on how you set up your web server, see the Flask and Django demos at the beginning of this repo for examples.
 ### get_login_cas_url
-This returns the URL on the UMD CAS server that you can redirect to in order to log the user in. It contains an encoded version of the location to return to so that the CAS servers know how to redirect the user back after logging in. You should set up a route on your app for something like `/login` to return a redirect to this URL, as shown in the flask and django demos.
+This returns the URL on the UMD CAS server that you can redirect to in order to log the user in. It contains an encoded version of the location to return to so that the CAS servers know how to redirect the user back after logging in. You should set up a route on your app for something like `/login` to return a redirect to this URL, as shown in the Flask and Django demos.
 ### get_logout_cas_url
 This returns the URL on the UMD CAS server that you can redirect to in order to to log the user out. Map this to a route such as `/logout` just like the previous.
 ### validate_ticket
