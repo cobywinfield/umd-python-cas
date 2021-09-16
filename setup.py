@@ -2,10 +2,10 @@ from setuptools import setup
 
 setup(
     name='umd_python_cas',
-    version='1.0.0',
+    version='1.0.1',
     description='A python client to access the University of Maryland Central Authentication Services (CAS) remote instance.',
     url='https://github.com/umd-python-cas/umd-python-cas',
-    author='Jacob (Coby) Winfield',
+    author='Jacob (Coby) Winfield, Johan Vandegriff',
     author_email='coby.winfield@gmail.com',
     license='MIT',
     packages=['umd_python_cas'],
