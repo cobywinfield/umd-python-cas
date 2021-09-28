@@ -1,6 +1,6 @@
 # umd-python-cas
 ## Getting Started
-To get started, follow the instructions on one of our demo repos, either [Flask](https://github.com/umd-python-cas/flask-demo) or [Django](https://github.com/umd-python-cas/django-demo). Those examples will help you get started with umd-python-cas in a web app environment. The rest of this readme has extra information.
+To get started, follow the instructions on one of our demo repos, with [Flask](https://github.com/umd-python-cas/flask-demo) or [Django](https://github.com/umd-python-cas/django-demo). Those examples will help you get started with umd-python-cas in a web app environment. The rest of this readme has extra information.
 ## Install
 ```bash
 pip install umd-python-cas
@@ -27,7 +27,7 @@ pip install .
 ```
 ## How It Works
 ### UMDCASClient class
-`umd-python-cas` contains a single class, called `UMDCASClient`. This class manages the authentication to the UMD CAS servers. To create an instance of the class, you use the constructor, passing in both a `hostname` and a `post_auth_route`:
+`umd-python-cas` contains a single class, called `UMDCASClient` that can be used with any Python backend framework to interact with the University of Maryland Central Authentication Services. This class manages the authentication to the UMD CAS servers. To create an instance of the class, you use the constructor, passing in both a `hostname` and a `post_auth_route`:
 ```python
 from umd_python_cas import UMDCASClient
 
