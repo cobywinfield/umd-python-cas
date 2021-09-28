@@ -1,5 +1,7 @@
 # umd-python-cas
 ## Getting Started
+umd-python-cas allows authentication through the University of Maryland's Central Authentication Service (CAS) using any Python backend Framework.
+
 To get started, follow the instructions on one of our demo repos, with [Flask](https://github.com/umd-python-cas/flask-demo) or [Django](https://github.com/umd-python-cas/django-demo). Those examples will help you get started with umd-python-cas in a web app environment. The rest of this readme has extra information.
 ## Install
 ```bash
