@@ -31,12 +31,11 @@ class UMDCASClient(object):
 
         if ticket is None:
             raise ValueError("ticket is None can't validate user")
-        
-        xml_dict = {}
-        cas_validate_url = self.umd_cas_validate_url + urllib.parse.quote_plus(self.host_name + self.post_auth_redirect_route) + '&ticket=' + str(ticket)
-        xml_dict = parse(urlopen(cas_validate_url).read().strip().decode('utf8', 'ignore'))
 
-        try:
+        try: 
+            xml_dict = {}
+            cas_validate_url = self.umd_cas_validate_url + urllib.parse.quote_plus(self.host_name + self.post_auth_redirect_route) + '&ticket=' + str(ticket)
+            xml_dict = parse(urlopen(cas_validate_url).read().strip().decode('utf8', 'ignore'))
             return xml_dict["cas:serviceResponse"]["cas:authenticationSuccess"]["cas:user"]
         except Exception as err:
             raise Exception("incorrect or empty xml: " + str(err))
