@@ -13,20 +13,6 @@ from umd_python_cas import UMDCASClient
 
 client = UMDCASClient(host_name="http://127.0.0.1:5000", post_auth_route="/secure")
 ```
-## Install from Source
-Installing from source is not necessary, but in case you want to do it, here's how. First, clone the repository, and navigate into the directory:
-```bash
-git clone https://github.com/umd-python-cas/umd-python-cas.git
-cd umd-python-cas
-```
-Then, if you want to build a specific version, check out that version's tag. Find the list of tags [here](https://github.com/umd-python-cas/umd-python-cas/tags). If you want to build the latest commit, skip this step.
-```bash
-git checkout vX.X.X
-```
-Finally, install the package using pip
-```
-pip install .
-```
 ## How It Works
 ### UMDCASClient class
 `umd-python-cas` contains a single class, called `UMDCASClient` that can be used with any Python backend framework to interact with the University of Maryland Central Authentication Services. This class manages the authentication to the UMD CAS servers. To create an instance of the class, you use the constructor, passing in both a `hostname` and a `post_auth_route`:
